@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3214297A81BD2E6D14704E88 /* libPods-MediaComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5473E14034AF1B21CB0B1F3 /* libPods-MediaComponent.a */; };
 		390A917A1AE49C2A005AEB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A91791AE49C2A005AEB3A /* AppDelegate.swift */; };
 		390A917C1AE49C2A005AEB3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A917B1AE49C2A005AEB3A /* ViewController.swift */; };
 		390A917F1AE49C2A005AEB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390A917D1AE49C2A005AEB3A /* Main.storyboard */; };
 		390A91811AE49C2A005AEB3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390A91801AE49C2A005AEB3A /* Images.xcassets */; };
 		390A91841AE49C2A005AEB3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390A91821AE49C2A005AEB3A /* LaunchScreen.xib */; };
 		390A91901AE49C2A005AEB3A /* MediaComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A918F1AE49C2A005AEB3A /* MediaComponentTests.swift */; };
+		390A919A1AE49EC1005AEB3A /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A91991AE49EC1005AEB3A /* MediaViewController.swift */; };
+		390A91A01AE4ADD7005AEB3A /* MediaMuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A919F1AE4ADD7005AEB3A /* MediaMuxer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 		390A91891AE49C2A005AEB3A /* MediaComponentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaComponentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		390A918E1AE49C2A005AEB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		390A918F1AE49C2A005AEB3A /* MediaComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaComponentTests.swift; sourceTree = "<group>"; };
+		390A91991AE49EC1005AEB3A /* MediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		390A919B1AE4A0F9005AEB3A /* MediaComponent-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MediaComponent-Bridging-Header.h"; sourceTree = "<group>"; };
+		390A919F1AE4ADD7005AEB3A /* MediaMuxer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaMuxer.swift; sourceTree = "<group>"; };
+		E0575AEA54636BC1A7139418 /* Pods-MediaComponent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaComponent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MediaComponent/Pods-MediaComponent.debug.xcconfig"; sourceTree = "<group>"; };
+		ED06B6ACF0AFD4B88FFA620E /* Pods-MediaComponent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MediaComponent.release.xcconfig"; path = "Pods/Target Support Files/Pods-MediaComponent/Pods-MediaComponent.release.xcconfig"; sourceTree = "<group>"; };
+		F5473E14034AF1B21CB0B1F3 /* libPods-MediaComponent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MediaComponent.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3214297A81BD2E6D14704E88 /* libPods-MediaComponent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +69,12 @@
 		390A916B1AE49C2A005AEB3A = {
 			isa = PBXGroup;
 			children = (
+				390A919F1AE4ADD7005AEB3A /* MediaMuxer.swift */,
 				390A91761AE49C2A005AEB3A /* MediaComponent */,
 				390A918C1AE49C2A005AEB3A /* MediaComponentTests */,
 				390A91751AE49C2A005AEB3A /* Products */,
+				E96480CA5BCEBA11615D4319 /* Pods */,
+				C8F940DD8059BB8D32ED6F07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +92,12 @@
 			children = (
 				390A91791AE49C2A005AEB3A /* AppDelegate.swift */,
 				390A917B1AE49C2A005AEB3A /* ViewController.swift */,
+				390A91991AE49EC1005AEB3A /* MediaViewController.swift */,
 				390A917D1AE49C2A005AEB3A /* Main.storyboard */,
 				390A91801AE49C2A005AEB3A /* Images.xcassets */,
 				390A91821AE49C2A005AEB3A /* LaunchScreen.xib */,
 				390A91771AE49C2A005AEB3A /* Supporting Files */,
+				390A919B1AE4A0F9005AEB3A /* MediaComponent-Bridging-Header.h */,
 			);
 			path = MediaComponent;
 			sourceTree = "<group>";
@@ -112,6 +127,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C8F940DD8059BB8D32ED6F07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5473E14034AF1B21CB0B1F3 /* libPods-MediaComponent.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E96480CA5BCEBA11615D4319 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0575AEA54636BC1A7139418 /* Pods-MediaComponent.debug.xcconfig */,
+				ED06B6ACF0AFD4B88FFA620E /* Pods-MediaComponent.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 390A91931AE49C2A005AEB3A /* Build configuration list for PBXNativeTarget "MediaComponent" */;
 			buildPhases = (
+				91799ECFC082C135AF045A2B /* Check Pods Manifest.lock */,
 				390A91701AE49C2A005AEB3A /* Sources */,
 				390A91711AE49C2A005AEB3A /* Frameworks */,
 				390A91721AE49C2A005AEB3A /* Resources */,
+				442713D3492AC7C4E1DFCC83 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,12 +241,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		442713D3492AC7C4E1DFCC83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MediaComponent/Pods-MediaComponent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91799ECFC082C135AF045A2B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		390A91701AE49C2A005AEB3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390A91A01AE4ADD7005AEB3A /* MediaMuxer.swift in Sources */,
 				390A917C1AE49C2A005AEB3A /* ViewController.swift in Sources */,
+				390A919A1AE49EC1005AEB3A /* MediaViewController.swift in Sources */,
 				390A917A1AE49C2A005AEB3A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,21 +407,28 @@
 		};
 		390A91941AE49C2A005AEB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0575AEA54636BC1A7139418 /* Pods-MediaComponent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MediaComponent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MediaComponent/MediaComponent-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		390A91951AE49C2A005AEB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED06B6ACF0AFD4B88FFA620E /* Pods-MediaComponent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MediaComponent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MediaComponent/MediaComponent-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +485,7 @@
 				390A91951AE49C2A005AEB3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		390A91961AE49C2A005AEB3A /* Build configuration list for PBXNativeTarget "MediaComponentTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +494,7 @@
 				390A91981AE49C2A005AEB3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

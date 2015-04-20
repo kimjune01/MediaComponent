@@ -1,18 +1,21 @@
-//
-//  ViewController.swift
-//  MediaComponent
-//
-//  Created by Camvy Films on 2015-04-19.
-//  Copyright (c) 2015 June. All rights reserved.
-//
+
 
 import UIKit
 
 class ViewController: UIViewController {
 
+  let mediaVC = MediaViewController()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    addMediaVC()
+  }
+  
+  func addMediaVC() {
+    self.addChildViewController(mediaVC)
+    //mediaVC.view.frame = CGRectMake(x, y, width, height)
+    self.view.addSubview(mediaVC.view)
+    mediaVC.didMoveToParentViewController(self)
   }
 
   override func didReceiveMemoryWarning() {

@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 target 'MediaComponent' do
-
+pod 'GPUImage'
 end
 
 target 'MediaComponentTests' do
